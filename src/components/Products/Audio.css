@@ -1,0 +1,141 @@
+
+.audio-container {
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 0%;
+ 
+    
+  }
+  
+  .audio-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 9%;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .audio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    
+  }
+  
+  .audio-item {
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f7;
+    height: 97%;
+    position: relative;
+    overflow: hidden;
+}
+  
+  
+  .audio-image {
+    width: 63%;
+    max-height: 248px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+  }
+  .audio-item:hover .product-image {
+    transform: scale(1.1); 
+  }
+  .audio-name{
+    font-size: 21px;
+    color: #333;
+    margin-top: 139px;
+  }
+  
+  .audio-price {
+    
+    color: #333;
+   
+  }
+  .view-more-button {
+    background-color: #47474785;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 32px 550px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.audio-item {
+    position: relative; 
+  }
+  
+  .color-dots {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  .color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .silver {
+    background-color: silver;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  
+
+.view-more-button:hover {
+  background-color: #474747a1; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+
+  @media (max-width: 768px) {
+    .audio-grid {
+      grid-template-columns: 1fr; 
+    }
+    .audio-name {
+        font-size: 21px;
+        color: #333;
+        margin-top: 31px;
+    }
+    .view-more-button{
+        margin: 32px 145px;
+    }
+    
+  }

@@ -1,0 +1,48 @@
+.featured {
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .featured-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255 255 255);
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 137px;
+    text-align: center;
+    z-index: 1;
+    animation: fadeInUp 2s ease;
+  }
+ 
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .featured {
+        margin-top: 5%;
+    }
+
+  }
